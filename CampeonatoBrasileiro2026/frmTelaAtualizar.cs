@@ -16,5 +16,13 @@ namespace CampeonatoBrasileiro2026
         {
             InitializeComponent();
         }
+
+        private void btn_Consultar_Click(object sender, EventArgs e)
+        {
+            frmConsultar NovaJanela = new frmConsultar();
+            NovaJanela.FormClosed += (s, args) => Application.Exit();
+            NovaJanela.Show();
+            this.Hide();
+        }
     }
 }

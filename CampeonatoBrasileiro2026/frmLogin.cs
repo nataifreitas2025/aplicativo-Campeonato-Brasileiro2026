@@ -7,9 +7,16 @@ namespace CampeonatoBrasileiro2026
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Entrar_Click(object sender, EventArgs e)
         {
+            frmPrincipal PaginaPrincipal = new frmPrincipal();
+            PaginaPrincipal.Show();
+            this.Hide();
+        }
 
+        private void btn_Sair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

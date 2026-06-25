@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D730539C-D8B3-400C-8C26-4B0AC2C25AFF}|CampeonatoBrasileiro2026.csproj|c:\\users\\1090324\\documents\\github\\aplicativo-campeonato-brasileiro2026\\campeonatobrasileiro2026\\frmtelaatualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D730539C-D8B3-400C-8C26-4B0AC2C25AFF}|CampeonatoBrasileiro2026.csproj|solutionrelative:frmtelaatualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D730539C-D8B3-400C-8C26-4B0AC2C25AFF}|CampeonatoBrasileiro2026.csproj|C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D730539C-D8B3-400C-8C26-4B0AC2C25AFF}|CampeonatoBrasileiro2026.csproj|solutionrelative:frmconsultar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D730539C-D8B3-400C-8C26-4B0AC2C25AFF}|CampeonatoBrasileiro2026.csproj|C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D730539C-D8B3-400C-8C26-4B0AC2C25AFF}|CampeonatoBrasileiro2026.csproj|solutionrelative:frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D730539C-D8B3-400C-8C26-4B0AC2C25AFF}|CampeonatoBrasileiro2026.csproj|C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D730539C-D8B3-400C-8C26-4B0AC2C25AFF}|CampeonatoBrasileiro2026.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmLogin.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmLogin.cs",
+              "RelativeDocumentMoniker": "frmLogin.cs",
+              "ToolTip": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmLogin.cs [Projeto]",
+              "RelativeToolTip": "frmLogin.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-22T23:08:03.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmPrincipal.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmPrincipal.cs",
+              "RelativeDocumentMoniker": "frmPrincipal.cs",
+              "ToolTip": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmPrincipal.cs [Projeto]",
+              "RelativeToolTip": "frmPrincipal.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T23:09:11.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmConsultar.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmConsultar.cs",
+              "RelativeDocumentMoniker": "frmConsultar.cs",
+              "ToolTip": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmConsultar.cs [Projeto]",
+              "RelativeToolTip": "frmConsultar.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-18T23:50:01.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmTelaAtualizar.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmTelaAtualizar.cs",
+              "RelativeDocumentMoniker": "frmTelaAtualizar.cs",
+              "ToolTip": "C:\\Users\\1090324\\Documents\\GitHub\\aplicativo-Campeonato-Brasileiro2026\\CampeonatoBrasileiro2026\\frmTelaAtualizar.cs [Projeto]",
+              "RelativeToolTip": "frmTelaAtualizar.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-19T00:05:21.436Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

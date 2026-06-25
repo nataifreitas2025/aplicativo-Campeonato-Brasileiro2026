@@ -30,40 +30,41 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaAtualizar));
             pictureBox2 = new PictureBox();
-            label2 = new Label();
-            label1 = new Label();
-            comboBox1 = new ComboBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            lbl_Atualizar = new Label();
+            lbl_serie1 = new Label();
+            cb_serie1 = new ComboBox();
+            btn_Inserir = new Button();
+            btn_Atualizar = new Button();
+            btn_Apagar = new Button();
             pictureBox1 = new PictureBox();
-            label3 = new Label();
-            textBox1 = new TextBox();
-            label4 = new Label();
-            textBox2 = new TextBox();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            label9 = new Label();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            dataGridView1 = new DataGridView();
-            radioButton1 = new RadioButton();
-            radioButton2 = new RadioButton();
-            textBox11 = new TextBox();
+            lbl_Nome = new Label();
+            txt_Nome = new TextBox();
+            lbl_Pontos = new Label();
+            txt_Pontos = new TextBox();
+            lbl_Posicao = new Label();
+            lbl_Jogos = new Label();
+            lbl_Saldo = new Label();
+            lbl_Vitorias = new Label();
+            lbl_Empate = new Label();
+            lbl_Derrota = new Label();
+            lbl_Gols = new Label();
+            lbl_Contra = new Label();
+            txt_Posicao = new TextBox();
+            txt_Jogos = new TextBox();
+            txt_Saldo = new TextBox();
+            txt_Vitorias = new TextBox();
+            txt_Empate = new TextBox();
+            txt_Derrota = new TextBox();
+            txt_Gols = new TextBox();
+            txt_Contra = new TextBox();
+            dgv_Atualizar = new DataGridView();
+            rb_Nome = new RadioButton();
+            rb_Posicao = new RadioButton();
+            txt_time = new TextBox();
+            btn_Consultar = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_Atualizar).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -75,71 +76,72 @@
             pictureBox2.TabIndex = 7;
             pictureBox2.TabStop = false;
             // 
-            // label2
+            // lbl_Atualizar
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.MidnightBlue;
-            label2.Font = new Font("Snap ITC", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(43, 60);
-            label2.Name = "label2";
-            label2.Size = new Size(136, 54);
-            label2.TabIndex = 9;
-            label2.Text = "Atualizar\r\n  Times\r\n";
+            lbl_Atualizar.AutoSize = true;
+            lbl_Atualizar.BackColor = Color.MidnightBlue;
+            lbl_Atualizar.Font = new Font("Snap ITC", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_Atualizar.ForeColor = SystemColors.ButtonHighlight;
+            lbl_Atualizar.Location = new Point(43, 60);
+            lbl_Atualizar.Name = "lbl_Atualizar";
+            lbl_Atualizar.Size = new Size(136, 54);
+            lbl_Atualizar.TabIndex = 9;
+            lbl_Atualizar.Text = "Atualizar\r\n  Times\r\n";
             // 
-            // label1
+            // lbl_serie1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.MidnightBlue;
-            label1.Font = new Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(43, 188);
-            label1.Name = "label1";
-            label1.Size = new Size(71, 22);
-            label1.TabIndex = 10;
-            label1.Text = "Serie:";
+            lbl_serie1.AutoSize = true;
+            lbl_serie1.BackColor = Color.MidnightBlue;
+            lbl_serie1.Font = new Font("Snap ITC", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_serie1.ForeColor = Color.Transparent;
+            lbl_serie1.Location = new Point(43, 149);
+            lbl_serie1.Name = "lbl_serie1";
+            lbl_serie1.Size = new Size(71, 22);
+            lbl_serie1.TabIndex = 10;
+            lbl_serie1.Text = "Serie:";
             // 
-            // comboBox1
+            // cb_serie1
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Selecionar...", "Serie A", "Serie B", "Serie C", "Serie D" });
-            comboBox1.Location = new Point(43, 213);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 11;
+            cb_serie1.FormattingEnabled = true;
+            cb_serie1.Items.AddRange(new object[] { "Selecionar...", "Serie A", "Serie B", "Serie C", "Serie D" });
+            cb_serie1.Location = new Point(43, 174);
+            cb_serie1.Name = "cb_serie1";
+            cb_serie1.Size = new Size(121, 23);
+            cb_serie1.TabIndex = 11;
+            cb_serie1.Text = "Selecione...";
             // 
-            // button1
+            // btn_Inserir
             // 
-            button1.BackColor = Color.LimeGreen;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Location = new Point(43, 258);
-            button1.Name = "button1";
-            button1.Size = new Size(121, 35);
-            button1.TabIndex = 12;
-            button1.Text = "Inserir";
-            button1.UseVisualStyleBackColor = false;
+            btn_Inserir.BackColor = Color.LimeGreen;
+            btn_Inserir.FlatStyle = FlatStyle.Popup;
+            btn_Inserir.Location = new Point(43, 219);
+            btn_Inserir.Name = "btn_Inserir";
+            btn_Inserir.Size = new Size(121, 35);
+            btn_Inserir.TabIndex = 12;
+            btn_Inserir.Text = "Inserir";
+            btn_Inserir.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btn_Atualizar
             // 
-            button2.BackColor = Color.LimeGreen;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Location = new Point(43, 308);
-            button2.Name = "button2";
-            button2.Size = new Size(121, 35);
-            button2.TabIndex = 13;
-            button2.Text = "Atualizar";
-            button2.UseVisualStyleBackColor = false;
+            btn_Atualizar.BackColor = Color.LimeGreen;
+            btn_Atualizar.FlatStyle = FlatStyle.Popup;
+            btn_Atualizar.Location = new Point(43, 269);
+            btn_Atualizar.Name = "btn_Atualizar";
+            btn_Atualizar.Size = new Size(121, 35);
+            btn_Atualizar.TabIndex = 13;
+            btn_Atualizar.Text = "Atualizar";
+            btn_Atualizar.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_Apagar
             // 
-            button3.BackColor = Color.LimeGreen;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Location = new Point(43, 359);
-            button3.Name = "button3";
-            button3.Size = new Size(121, 35);
-            button3.TabIndex = 14;
-            button3.Text = "Apagar";
-            button3.UseVisualStyleBackColor = false;
+            btn_Apagar.BackColor = Color.Crimson;
+            btn_Apagar.FlatStyle = FlatStyle.Popup;
+            btn_Apagar.Location = new Point(43, 373);
+            btn_Apagar.Name = "btn_Apagar";
+            btn_Apagar.Size = new Size(121, 35);
+            btn_Apagar.TabIndex = 14;
+            btn_Apagar.Text = "Apagar";
+            btn_Apagar.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -151,213 +153,227 @@
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
             // 
-            // label3
+            // lbl_Nome
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(319, 19);
-            label3.Name = "label3";
-            label3.Size = new Size(73, 15);
-            label3.TabIndex = 16;
-            label3.Text = "Nome Time:";
+            lbl_Nome.AutoSize = true;
+            lbl_Nome.BackColor = Color.Transparent;
+            lbl_Nome.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Nome.Location = new Point(319, 19);
+            lbl_Nome.Name = "lbl_Nome";
+            lbl_Nome.Size = new Size(73, 15);
+            lbl_Nome.TabIndex = 16;
+            lbl_Nome.Text = "Nome Time:";
             // 
-            // textBox1
+            // txt_Nome
             // 
-            textBox1.Location = new Point(319, 37);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(152, 23);
-            textBox1.TabIndex = 17;
+            txt_Nome.Location = new Point(319, 37);
+            txt_Nome.Name = "txt_Nome";
+            txt_Nome.Size = new Size(152, 23);
+            txt_Nome.TabIndex = 17;
             // 
-            // label4
+            // lbl_Pontos
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(526, 19);
-            label4.Name = "label4";
-            label4.Size = new Size(81, 15);
-            label4.TabIndex = 18;
-            label4.Text = "Pontos Clube:";
+            lbl_Pontos.AutoSize = true;
+            lbl_Pontos.BackColor = Color.Transparent;
+            lbl_Pontos.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Pontos.Location = new Point(526, 19);
+            lbl_Pontos.Name = "lbl_Pontos";
+            lbl_Pontos.Size = new Size(81, 15);
+            lbl_Pontos.TabIndex = 18;
+            lbl_Pontos.Text = "Pontos Clube:";
             // 
-            // textBox2
+            // txt_Pontos
             // 
-            textBox2.Location = new Point(526, 37);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(152, 23);
-            textBox2.TabIndex = 19;
+            txt_Pontos.Location = new Point(526, 37);
+            txt_Pontos.Name = "txt_Pontos";
+            txt_Pontos.Size = new Size(152, 23);
+            txt_Pontos.TabIndex = 19;
             // 
-            // label5
+            // lbl_Posicao
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(318, 79);
-            label5.Name = "label5";
-            label5.Size = new Size(93, 17);
-            label5.TabIndex = 20;
-            label5.Text = "Posição Clube:";
+            lbl_Posicao.AutoSize = true;
+            lbl_Posicao.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Posicao.Location = new Point(318, 79);
+            lbl_Posicao.Name = "lbl_Posicao";
+            lbl_Posicao.Size = new Size(93, 17);
+            lbl_Posicao.TabIndex = 20;
+            lbl_Posicao.Text = "Posição Clube:";
             // 
-            // label6
+            // lbl_Jogos
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(524, 79);
-            label6.Name = "label6";
-            label6.Size = new Size(83, 17);
-            label6.TabIndex = 21;
-            label6.Text = "Jogos Clube:";
+            lbl_Jogos.AutoSize = true;
+            lbl_Jogos.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Jogos.Location = new Point(524, 79);
+            lbl_Jogos.Name = "lbl_Jogos";
+            lbl_Jogos.Size = new Size(83, 17);
+            lbl_Jogos.TabIndex = 21;
+            lbl_Jogos.Text = "Jogos Clube:";
             // 
-            // label7
+            // lbl_Saldo
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(319, 138);
-            label7.Name = "label7";
-            label7.Size = new Size(74, 17);
-            label7.TabIndex = 22;
-            label7.Text = "Saldo Gols:";
+            lbl_Saldo.AutoSize = true;
+            lbl_Saldo.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Saldo.Location = new Point(319, 138);
+            lbl_Saldo.Name = "lbl_Saldo";
+            lbl_Saldo.Size = new Size(74, 17);
+            lbl_Saldo.TabIndex = 22;
+            lbl_Saldo.Text = "Saldo Gols:";
             // 
-            // label8
+            // lbl_Vitorias
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(524, 138);
-            label8.Name = "label8";
-            label8.Size = new Size(92, 17);
-            label8.TabIndex = 23;
-            label8.Text = "Vitorias Clube:";
+            lbl_Vitorias.AutoSize = true;
+            lbl_Vitorias.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Vitorias.Location = new Point(524, 138);
+            lbl_Vitorias.Name = "lbl_Vitorias";
+            lbl_Vitorias.Size = new Size(92, 17);
+            lbl_Vitorias.TabIndex = 23;
+            lbl_Vitorias.Text = "Vitorias Clube:";
             // 
-            // label9
+            // lbl_Empate
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(319, 198);
-            label9.Name = "label9";
-            label9.Size = new Size(92, 17);
-            label9.TabIndex = 24;
-            label9.Text = "Empate Clube:";
+            lbl_Empate.AutoSize = true;
+            lbl_Empate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Empate.Location = new Point(319, 198);
+            lbl_Empate.Name = "lbl_Empate";
+            lbl_Empate.Size = new Size(92, 17);
+            lbl_Empate.TabIndex = 24;
+            lbl_Empate.Text = "Empate Clube:";
             // 
-            // label10
+            // lbl_Derrota
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label10.Location = new Point(523, 198);
-            label10.Name = "label10";
-            label10.Size = new Size(93, 17);
-            label10.TabIndex = 25;
-            label10.Text = "Derrota Clube:";
+            lbl_Derrota.AutoSize = true;
+            lbl_Derrota.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Derrota.Location = new Point(523, 198);
+            lbl_Derrota.Name = "lbl_Derrota";
+            lbl_Derrota.Size = new Size(93, 17);
+            lbl_Derrota.TabIndex = 25;
+            lbl_Derrota.Text = "Derrota Clube:";
             // 
-            // label11
+            // lbl_Gols
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(318, 253);
-            label11.Name = "label11";
-            label11.Size = new Size(98, 17);
-            label11.TabIndex = 26;
-            label11.Text = "Gols Pro Clube:";
+            lbl_Gols.AutoSize = true;
+            lbl_Gols.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Gols.Location = new Point(318, 253);
+            lbl_Gols.Name = "lbl_Gols";
+            lbl_Gols.Size = new Size(98, 17);
+            lbl_Gols.TabIndex = 26;
+            lbl_Gols.Text = "Gols Pro Clube:";
             // 
-            // label12
+            // lbl_Contra
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.Location = new Point(523, 253);
-            label12.Name = "label12";
-            label12.Size = new Size(117, 17);
-            label12.TabIndex = 27;
-            label12.Text = "Gols Contra Clube:";
+            lbl_Contra.AutoSize = true;
+            lbl_Contra.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_Contra.Location = new Point(523, 253);
+            lbl_Contra.Name = "lbl_Contra";
+            lbl_Contra.Size = new Size(117, 17);
+            lbl_Contra.TabIndex = 27;
+            lbl_Contra.Text = "Gols Contra Clube:";
             // 
-            // textBox3
+            // txt_Posicao
             // 
-            textBox3.Location = new Point(318, 99);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(152, 23);
-            textBox3.TabIndex = 28;
+            txt_Posicao.Location = new Point(318, 99);
+            txt_Posicao.Name = "txt_Posicao";
+            txt_Posicao.Size = new Size(152, 23);
+            txt_Posicao.TabIndex = 28;
             // 
-            // textBox4
+            // txt_Jogos
             // 
-            textBox4.Location = new Point(524, 99);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(152, 23);
-            textBox4.TabIndex = 29;
+            txt_Jogos.Location = new Point(524, 99);
+            txt_Jogos.Name = "txt_Jogos";
+            txt_Jogos.Size = new Size(152, 23);
+            txt_Jogos.TabIndex = 29;
             // 
-            // textBox5
+            // txt_Saldo
             // 
-            textBox5.Location = new Point(319, 158);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(152, 23);
-            textBox5.TabIndex = 30;
+            txt_Saldo.Location = new Point(319, 158);
+            txt_Saldo.Name = "txt_Saldo";
+            txt_Saldo.Size = new Size(152, 23);
+            txt_Saldo.TabIndex = 30;
             // 
-            // textBox6
+            // txt_Vitorias
             // 
-            textBox6.Location = new Point(524, 158);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(152, 23);
-            textBox6.TabIndex = 31;
+            txt_Vitorias.Location = new Point(524, 158);
+            txt_Vitorias.Name = "txt_Vitorias";
+            txt_Vitorias.Size = new Size(152, 23);
+            txt_Vitorias.TabIndex = 31;
             // 
-            // textBox7
+            // txt_Empate
             // 
-            textBox7.Location = new Point(318, 217);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(152, 23);
-            textBox7.TabIndex = 32;
+            txt_Empate.Location = new Point(318, 217);
+            txt_Empate.Name = "txt_Empate";
+            txt_Empate.Size = new Size(152, 23);
+            txt_Empate.TabIndex = 32;
             // 
-            // textBox8
+            // txt_Derrota
             // 
-            textBox8.Location = new Point(523, 218);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(152, 23);
-            textBox8.TabIndex = 33;
+            txt_Derrota.Location = new Point(523, 218);
+            txt_Derrota.Name = "txt_Derrota";
+            txt_Derrota.Size = new Size(152, 23);
+            txt_Derrota.TabIndex = 33;
             // 
-            // textBox9
+            // txt_Gols
             // 
-            textBox9.Location = new Point(318, 273);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(152, 23);
-            textBox9.TabIndex = 34;
+            txt_Gols.Location = new Point(318, 273);
+            txt_Gols.Name = "txt_Gols";
+            txt_Gols.Size = new Size(152, 23);
+            txt_Gols.TabIndex = 34;
             // 
-            // textBox10
+            // txt_Contra
             // 
-            textBox10.Location = new Point(523, 274);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(152, 23);
-            textBox10.TabIndex = 35;
+            txt_Contra.Location = new Point(523, 274);
+            txt_Contra.Name = "txt_Contra";
+            txt_Contra.Size = new Size(152, 23);
+            txt_Contra.TabIndex = 35;
             // 
-            // dataGridView1
+            // dgv_Atualizar
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(255, 303);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(533, 91);
-            dataGridView1.TabIndex = 36;
+            dgv_Atualizar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgv_Atualizar.Location = new Point(255, 303);
+            dgv_Atualizar.Name = "dgv_Atualizar";
+            dgv_Atualizar.Size = new Size(533, 91);
+            dgv_Atualizar.TabIndex = 36;
             // 
-            // radioButton1
+            // rb_Nome
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(255, 410);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(105, 19);
-            radioButton1.TabIndex = 37;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Nome do Time";
-            radioButton1.UseVisualStyleBackColor = true;
+            rb_Nome.AutoSize = true;
+            rb_Nome.Location = new Point(255, 410);
+            rb_Nome.Name = "rb_Nome";
+            rb_Nome.Size = new Size(105, 19);
+            rb_Nome.TabIndex = 37;
+            rb_Nome.TabStop = true;
+            rb_Nome.Text = "Nome do Time";
+            rb_Nome.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_Posicao
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(390, 410);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(113, 19);
-            radioButton2.TabIndex = 38;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Posição do Time";
-            radioButton2.UseVisualStyleBackColor = true;
+            rb_Posicao.AutoSize = true;
+            rb_Posicao.Location = new Point(390, 410);
+            rb_Posicao.Name = "rb_Posicao";
+            rb_Posicao.Size = new Size(113, 19);
+            rb_Posicao.TabIndex = 38;
+            rb_Posicao.TabStop = true;
+            rb_Posicao.Text = "Posição do Time";
+            rb_Posicao.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // txt_time
             // 
-            textBox11.BackColor = Color.Silver;
-            textBox11.Location = new Point(523, 410);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(173, 23);
-            textBox11.TabIndex = 39;
+            txt_time.BackColor = Color.Silver;
+            txt_time.Location = new Point(523, 410);
+            txt_time.Name = "txt_time";
+            txt_time.Size = new Size(173, 23);
+            txt_time.TabIndex = 39;
+            // 
+            // btn_Consultar
+            // 
+            btn_Consultar.BackColor = Color.LimeGreen;
+            btn_Consultar.FlatStyle = FlatStyle.Popup;
+            btn_Consultar.Location = new Point(43, 321);
+            btn_Consultar.Name = "btn_Consultar";
+            btn_Consultar.Size = new Size(121, 35);
+            btn_Consultar.TabIndex = 40;
+            btn_Consultar.Text = "Consultar Tabela";
+            btn_Consultar.UseVisualStyleBackColor = false;
+            btn_Consultar.Click += btn_Consultar_Click;
             // 
             // frmTelaAtualizar
             // 
@@ -365,43 +381,46 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox11);
-            Controls.Add(radioButton2);
-            Controls.Add(radioButton1);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox10);
-            Controls.Add(textBox9);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(label12);
-            Controls.Add(label11);
-            Controls.Add(label10);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(textBox2);
-            Controls.Add(label4);
-            Controls.Add(textBox1);
-            Controls.Add(label3);
+            Controls.Add(btn_Consultar);
+            Controls.Add(txt_time);
+            Controls.Add(rb_Posicao);
+            Controls.Add(rb_Nome);
+            Controls.Add(dgv_Atualizar);
+            Controls.Add(txt_Contra);
+            Controls.Add(txt_Gols);
+            Controls.Add(txt_Derrota);
+            Controls.Add(txt_Empate);
+            Controls.Add(txt_Vitorias);
+            Controls.Add(txt_Saldo);
+            Controls.Add(txt_Jogos);
+            Controls.Add(txt_Posicao);
+            Controls.Add(lbl_Contra);
+            Controls.Add(lbl_Gols);
+            Controls.Add(lbl_Derrota);
+            Controls.Add(lbl_Empate);
+            Controls.Add(lbl_Vitorias);
+            Controls.Add(lbl_Saldo);
+            Controls.Add(lbl_Jogos);
+            Controls.Add(lbl_Posicao);
+            Controls.Add(txt_Pontos);
+            Controls.Add(lbl_Pontos);
+            Controls.Add(txt_Nome);
+            Controls.Add(lbl_Nome);
             Controls.Add(pictureBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(comboBox1);
-            Controls.Add(label1);
-            Controls.Add(label2);
+            Controls.Add(btn_Apagar);
+            Controls.Add(btn_Atualizar);
+            Controls.Add(btn_Inserir);
+            Controls.Add(cb_serie1);
+            Controls.Add(lbl_serie1);
+            Controls.Add(lbl_Atualizar);
             Controls.Add(pictureBox2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmTelaAtualizar";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "frmTelaAtualizar";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgv_Atualizar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -409,36 +428,37 @@
         #endregion
 
         private PictureBox pictureBox2;
-        private Label label2;
-        private Label label1;
-        private ComboBox comboBox1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Label lbl_Atualizar;
+        private Label lbl_serie1;
+        private ComboBox cb_serie1;
+        private Button btn_Inserir;
+        private Button btn_Atualizar;
+        private Button btn_Apagar;
         private PictureBox pictureBox1;
-        private Label label3;
-        private TextBox textBox1;
-        private Label label4;
-        private TextBox textBox2;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
-        private Label label9;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private DataGridView dataGridView1;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
-        private TextBox textBox11;
+        private Label lbl_Nome;
+        private TextBox txt_Nome;
+        private Label lbl_Pontos;
+        private TextBox txt_Pontos;
+        private Label lbl_Posicao;
+        private Label lbl_Jogos;
+        private Label lbl_Saldo;
+        private Label lbl_Vitorias;
+        private Label lbl_Empate;
+        private Label lbl_Derrota;
+        private Label lbl_Gols;
+        private Label lbl_Contra;
+        private TextBox txt_Posicao;
+        private TextBox txt_Jogos;
+        private TextBox txt_Saldo;
+        private TextBox txt_Vitorias;
+        private TextBox txt_Empate;
+        private TextBox txt_Derrota;
+        private TextBox txt_Gols;
+        private TextBox txt_Contra;
+        private DataGridView dgv_Atualizar;
+        private RadioButton rb_Nome;
+        private RadioButton rb_Posicao;
+        private TextBox txt_time;
+        private Button btn_Consultar;
     }
 }
