@@ -78,8 +78,9 @@
             // 
             // cb_Serie
             // 
+            cb_Serie.DropDownStyle = ComboBoxStyle.DropDownList;
             cb_Serie.FormattingEnabled = true;
-            cb_Serie.Items.AddRange(new object[] { "Selecionar...", "Série A", "Série B", "Série C", "Série D" });
+            cb_Serie.Items.AddRange(new object[] { "", "Série A", "Série B", "Série C", "Série D" });
             cb_Serie.Location = new Point(32, 225);
             cb_Serie.Name = "cb_Serie";
             cb_Serie.Size = new Size(121, 23);

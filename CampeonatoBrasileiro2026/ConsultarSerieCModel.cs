@@ -6,7 +6,28 @@ using System.Threading.Tasks;
 
 namespace CampeonatoBrasileiro2026
 {
-    internal class ConsultarSerieCModel
+    public class ConsultarSerieCModel
     {
+        public int idSerie_C { get; set; } 
+
+        public string? NomeClube { get; set; }
+
+        public int PontosClube { get; set; }
+
+        public int PossicaoClube { get; set; }
+
+        public int JogosClube { get; set; }
+
+        public int SaldoGols { get; set; }
+
+        public int VitoriasClube { get; set; }
+
+        public int EmpateClube { get; set; }
+
+        public int DerrotaClube { get; set; }
+
+        public int GolsProClube { get; set; }
+
+        public int GolsContraClube { get; set; }
     }
 }
