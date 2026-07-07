@@ -32,7 +32,7 @@
             pictureBox2 = new PictureBox();
             lbl_Atualizar = new Label();
             lbl_serie1 = new Label();
-            cb_serie1 = new ComboBox();
+            cb_SerieAtualizar = new ComboBox();
             btn_Inserir = new Button();
             btn_Atualizar = new Button();
             btn_Apagar = new Button();
@@ -100,15 +100,17 @@
             lbl_serie1.TabIndex = 10;
             lbl_serie1.Text = "Serie:";
             // 
-            // cb_serie1
+            // cb_SerieAtualizar
             // 
-            cb_serie1.FormattingEnabled = true;
-            cb_serie1.Items.AddRange(new object[] { "Selecionar...", "Serie A", "Serie B", "Serie C", "Serie D" });
-            cb_serie1.Location = new Point(43, 174);
-            cb_serie1.Name = "cb_serie1";
-            cb_serie1.Size = new Size(121, 23);
-            cb_serie1.TabIndex = 11;
-            cb_serie1.Text = "Selecione...";
+            cb_SerieAtualizar.DropDownStyle = ComboBoxStyle.DropDownList;
+            cb_SerieAtualizar.FormattingEnabled = true;
+            cb_SerieAtualizar.Items.AddRange(new object[] { "Selecionar...", "Série A", "Série B", "Série C", "Série D" });
+            cb_SerieAtualizar.Location = new Point(43, 174);
+            cb_SerieAtualizar.Name = "cb_SerieAtualizar";
+            cb_SerieAtualizar.Size = new Size(121, 23);
+            cb_SerieAtualizar.TabIndex = 11;
+            cb_SerieAtualizar.SelectedIndexChanged += cb_SerieAtualizar_SelectedValueChanged;
+            cb_SerieAtualizar.SelectedValueChanged += cb_SerieAtualizar_SelectedValueChanged;
             // 
             // btn_Inserir
             // 
@@ -120,10 +122,11 @@
             btn_Inserir.TabIndex = 12;
             btn_Inserir.Text = "Inserir";
             btn_Inserir.UseVisualStyleBackColor = false;
+            btn_Inserir.Click += btn_Inserir_Click;
             // 
             // btn_Atualizar
             // 
-            btn_Atualizar.BackColor = Color.LimeGreen;
+            btn_Atualizar.BackColor = Color.Yellow;
             btn_Atualizar.FlatStyle = FlatStyle.Popup;
             btn_Atualizar.Location = new Point(43, 269);
             btn_Atualizar.Name = "btn_Atualizar";
@@ -131,6 +134,7 @@
             btn_Atualizar.TabIndex = 13;
             btn_Atualizar.Text = "Atualizar";
             btn_Atualizar.UseVisualStyleBackColor = false;
+            btn_Atualizar.Click += btn_Atualizar_Click;
             // 
             // btn_Apagar
             // 
@@ -142,6 +146,7 @@
             btn_Apagar.TabIndex = 14;
             btn_Apagar.Text = "Apagar";
             btn_Apagar.UseVisualStyleBackColor = false;
+            btn_Apagar.Click += btn_Apagar_Click;
             // 
             // pictureBox1
             // 
@@ -332,6 +337,7 @@
             dgv_Atualizar.Name = "dgv_Atualizar";
             dgv_Atualizar.Size = new Size(533, 91);
             dgv_Atualizar.TabIndex = 36;
+            dgv_Atualizar.CellClick += dgv_Atualizar_CellClick;
             // 
             // rb_Nome
             // 
@@ -365,7 +371,7 @@
             // 
             // btn_Consultar
             // 
-            btn_Consultar.BackColor = Color.LimeGreen;
+            btn_Consultar.BackColor = Color.Honeydew;
             btn_Consultar.FlatStyle = FlatStyle.Popup;
             btn_Consultar.Location = new Point(43, 321);
             btn_Consultar.Name = "btn_Consultar";
@@ -410,7 +416,7 @@
             Controls.Add(btn_Apagar);
             Controls.Add(btn_Atualizar);
             Controls.Add(btn_Inserir);
-            Controls.Add(cb_serie1);
+            Controls.Add(cb_SerieAtualizar);
             Controls.Add(lbl_serie1);
             Controls.Add(lbl_Atualizar);
             Controls.Add(pictureBox2);
@@ -430,7 +436,7 @@
         private PictureBox pictureBox2;
         private Label lbl_Atualizar;
         private Label lbl_serie1;
-        private ComboBox cb_serie1;
+        private ComboBox cb_SerieAtualizar;
         private Button btn_Inserir;
         private Button btn_Atualizar;
         private Button btn_Apagar;
