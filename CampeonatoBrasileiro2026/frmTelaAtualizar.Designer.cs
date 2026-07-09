@@ -36,7 +36,6 @@
             btn_Inserir = new Button();
             btn_Atualizar = new Button();
             btn_Apagar = new Button();
-            pictureBox1 = new PictureBox();
             lbl_Nome = new Label();
             txt_Nome = new TextBox();
             lbl_Pontos = new Label();
@@ -58,12 +57,12 @@
             txt_Gols = new TextBox();
             txt_Contra = new TextBox();
             dgv_Atualizar = new DataGridView();
-            rb_Nome = new RadioButton();
-            rb_Posicao = new RadioButton();
-            txt_time = new TextBox();
             btn_Consultar = new Button();
+            txt_PesquisarNome = new TextBox();
+            txt_PesquisarPosicao = new TextBox();
+            lbl_PesquisarNome = new Label();
+            lbl_PesquisarPosicao = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgv_Atualizar).BeginInit();
             SuspendLayout();
             // 
@@ -148,22 +147,12 @@
             btn_Apagar.UseVisualStyleBackColor = false;
             btn_Apagar.Click += btn_Apagar_Click;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(222, -67);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(723, 518);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 15;
-            pictureBox1.TabStop = false;
-            // 
             // lbl_Nome
             // 
             lbl_Nome.AutoSize = true;
             lbl_Nome.BackColor = Color.Transparent;
             lbl_Nome.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Nome.Location = new Point(319, 19);
+            lbl_Nome.Location = new Point(432, 20);
             lbl_Nome.Name = "lbl_Nome";
             lbl_Nome.Size = new Size(73, 15);
             lbl_Nome.TabIndex = 16;
@@ -171,7 +160,7 @@
             // 
             // txt_Nome
             // 
-            txt_Nome.Location = new Point(319, 37);
+            txt_Nome.Location = new Point(432, 38);
             txt_Nome.Name = "txt_Nome";
             txt_Nome.Size = new Size(152, 23);
             txt_Nome.TabIndex = 17;
@@ -181,7 +170,7 @@
             lbl_Pontos.AutoSize = true;
             lbl_Pontos.BackColor = Color.Transparent;
             lbl_Pontos.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Pontos.Location = new Point(526, 19);
+            lbl_Pontos.Location = new Point(639, 20);
             lbl_Pontos.Name = "lbl_Pontos";
             lbl_Pontos.Size = new Size(81, 15);
             lbl_Pontos.TabIndex = 18;
@@ -189,7 +178,7 @@
             // 
             // txt_Pontos
             // 
-            txt_Pontos.Location = new Point(526, 37);
+            txt_Pontos.Location = new Point(639, 38);
             txt_Pontos.Name = "txt_Pontos";
             txt_Pontos.Size = new Size(152, 23);
             txt_Pontos.TabIndex = 19;
@@ -198,7 +187,7 @@
             // 
             lbl_Posicao.AutoSize = true;
             lbl_Posicao.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Posicao.Location = new Point(318, 79);
+            lbl_Posicao.Location = new Point(431, 80);
             lbl_Posicao.Name = "lbl_Posicao";
             lbl_Posicao.Size = new Size(93, 17);
             lbl_Posicao.TabIndex = 20;
@@ -208,7 +197,7 @@
             // 
             lbl_Jogos.AutoSize = true;
             lbl_Jogos.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Jogos.Location = new Point(524, 79);
+            lbl_Jogos.Location = new Point(637, 80);
             lbl_Jogos.Name = "lbl_Jogos";
             lbl_Jogos.Size = new Size(83, 17);
             lbl_Jogos.TabIndex = 21;
@@ -218,7 +207,7 @@
             // 
             lbl_Saldo.AutoSize = true;
             lbl_Saldo.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Saldo.Location = new Point(319, 138);
+            lbl_Saldo.Location = new Point(432, 139);
             lbl_Saldo.Name = "lbl_Saldo";
             lbl_Saldo.Size = new Size(74, 17);
             lbl_Saldo.TabIndex = 22;
@@ -228,7 +217,7 @@
             // 
             lbl_Vitorias.AutoSize = true;
             lbl_Vitorias.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Vitorias.Location = new Point(524, 138);
+            lbl_Vitorias.Location = new Point(637, 139);
             lbl_Vitorias.Name = "lbl_Vitorias";
             lbl_Vitorias.Size = new Size(92, 17);
             lbl_Vitorias.TabIndex = 23;
@@ -238,7 +227,7 @@
             // 
             lbl_Empate.AutoSize = true;
             lbl_Empate.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Empate.Location = new Point(319, 198);
+            lbl_Empate.Location = new Point(432, 199);
             lbl_Empate.Name = "lbl_Empate";
             lbl_Empate.Size = new Size(92, 17);
             lbl_Empate.TabIndex = 24;
@@ -248,7 +237,7 @@
             // 
             lbl_Derrota.AutoSize = true;
             lbl_Derrota.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Derrota.Location = new Point(523, 198);
+            lbl_Derrota.Location = new Point(636, 199);
             lbl_Derrota.Name = "lbl_Derrota";
             lbl_Derrota.Size = new Size(93, 17);
             lbl_Derrota.TabIndex = 25;
@@ -258,7 +247,7 @@
             // 
             lbl_Gols.AutoSize = true;
             lbl_Gols.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Gols.Location = new Point(318, 253);
+            lbl_Gols.Location = new Point(431, 254);
             lbl_Gols.Name = "lbl_Gols";
             lbl_Gols.Size = new Size(98, 17);
             lbl_Gols.TabIndex = 26;
@@ -268,7 +257,7 @@
             // 
             lbl_Contra.AutoSize = true;
             lbl_Contra.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbl_Contra.Location = new Point(523, 253);
+            lbl_Contra.Location = new Point(636, 254);
             lbl_Contra.Name = "lbl_Contra";
             lbl_Contra.Size = new Size(117, 17);
             lbl_Contra.TabIndex = 27;
@@ -276,56 +265,56 @@
             // 
             // txt_Posicao
             // 
-            txt_Posicao.Location = new Point(318, 99);
+            txt_Posicao.Location = new Point(431, 100);
             txt_Posicao.Name = "txt_Posicao";
             txt_Posicao.Size = new Size(152, 23);
             txt_Posicao.TabIndex = 28;
             // 
             // txt_Jogos
             // 
-            txt_Jogos.Location = new Point(524, 99);
+            txt_Jogos.Location = new Point(637, 100);
             txt_Jogos.Name = "txt_Jogos";
             txt_Jogos.Size = new Size(152, 23);
             txt_Jogos.TabIndex = 29;
             // 
             // txt_Saldo
             // 
-            txt_Saldo.Location = new Point(319, 158);
+            txt_Saldo.Location = new Point(432, 159);
             txt_Saldo.Name = "txt_Saldo";
             txt_Saldo.Size = new Size(152, 23);
             txt_Saldo.TabIndex = 30;
             // 
             // txt_Vitorias
             // 
-            txt_Vitorias.Location = new Point(524, 158);
+            txt_Vitorias.Location = new Point(637, 159);
             txt_Vitorias.Name = "txt_Vitorias";
             txt_Vitorias.Size = new Size(152, 23);
             txt_Vitorias.TabIndex = 31;
             // 
             // txt_Empate
             // 
-            txt_Empate.Location = new Point(318, 217);
+            txt_Empate.Location = new Point(431, 218);
             txt_Empate.Name = "txt_Empate";
             txt_Empate.Size = new Size(152, 23);
             txt_Empate.TabIndex = 32;
             // 
             // txt_Derrota
             // 
-            txt_Derrota.Location = new Point(523, 218);
+            txt_Derrota.Location = new Point(636, 219);
             txt_Derrota.Name = "txt_Derrota";
             txt_Derrota.Size = new Size(152, 23);
             txt_Derrota.TabIndex = 33;
             // 
             // txt_Gols
             // 
-            txt_Gols.Location = new Point(318, 273);
+            txt_Gols.Location = new Point(431, 274);
             txt_Gols.Name = "txt_Gols";
             txt_Gols.Size = new Size(152, 23);
             txt_Gols.TabIndex = 34;
             // 
             // txt_Contra
             // 
-            txt_Contra.Location = new Point(523, 274);
+            txt_Contra.Location = new Point(636, 275);
             txt_Contra.Name = "txt_Contra";
             txt_Contra.Size = new Size(152, 23);
             txt_Contra.TabIndex = 35;
@@ -333,41 +322,11 @@
             // dgv_Atualizar
             // 
             dgv_Atualizar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgv_Atualizar.Location = new Point(255, 303);
+            dgv_Atualizar.Location = new Point(227, 321);
             dgv_Atualizar.Name = "dgv_Atualizar";
-            dgv_Atualizar.Size = new Size(533, 91);
+            dgv_Atualizar.Size = new Size(572, 130);
             dgv_Atualizar.TabIndex = 36;
             dgv_Atualizar.CellClick += dgv_Atualizar_CellClick;
-            // 
-            // rb_Nome
-            // 
-            rb_Nome.AutoSize = true;
-            rb_Nome.Location = new Point(255, 410);
-            rb_Nome.Name = "rb_Nome";
-            rb_Nome.Size = new Size(105, 19);
-            rb_Nome.TabIndex = 37;
-            rb_Nome.TabStop = true;
-            rb_Nome.Text = "Nome do Time";
-            rb_Nome.UseVisualStyleBackColor = true;
-            // 
-            // rb_Posicao
-            // 
-            rb_Posicao.AutoSize = true;
-            rb_Posicao.Location = new Point(390, 410);
-            rb_Posicao.Name = "rb_Posicao";
-            rb_Posicao.Size = new Size(113, 19);
-            rb_Posicao.TabIndex = 38;
-            rb_Posicao.TabStop = true;
-            rb_Posicao.Text = "Posição do Time";
-            rb_Posicao.UseVisualStyleBackColor = true;
-            // 
-            // txt_time
-            // 
-            txt_time.BackColor = Color.Silver;
-            txt_time.Location = new Point(523, 410);
-            txt_time.Name = "txt_time";
-            txt_time.Size = new Size(173, 23);
-            txt_time.TabIndex = 39;
             // 
             // btn_Consultar
             // 
@@ -381,16 +340,51 @@
             btn_Consultar.UseVisualStyleBackColor = false;
             btn_Consultar.Click += btn_Consultar_Click;
             // 
+            // txt_PesquisarNome
+            // 
+            txt_PesquisarNome.Location = new Point(233, 133);
+            txt_PesquisarNome.Name = "txt_PesquisarNome";
+            txt_PesquisarNome.Size = new Size(151, 23);
+            txt_PesquisarNome.TabIndex = 41;
+            txt_PesquisarNome.TextChanged += txt_PesquisarNome_TextChanged;
+            // 
+            // txt_PesquisarPosicao
+            // 
+            txt_PesquisarPosicao.Location = new Point(233, 198);
+            txt_PesquisarPosicao.Name = "txt_PesquisarPosicao";
+            txt_PesquisarPosicao.Size = new Size(149, 23);
+            txt_PesquisarPosicao.TabIndex = 42;
+            txt_PesquisarPosicao.TextChanged += txt_PesquisarPosicao_TextChanged;
+            // 
+            // lbl_PesquisarNome
+            // 
+            lbl_PesquisarNome.AutoSize = true;
+            lbl_PesquisarNome.Location = new Point(233, 115);
+            lbl_PesquisarNome.Name = "lbl_PesquisarNome";
+            lbl_PesquisarNome.Size = new Size(117, 15);
+            lbl_PesquisarNome.TabIndex = 43;
+            lbl_PesquisarNome.Text = "Pesquisar Por Nome:";
+            // 
+            // lbl_PesquisarPosicao
+            // 
+            lbl_PesquisarPosicao.AutoSize = true;
+            lbl_PesquisarPosicao.Location = new Point(233, 180);
+            lbl_PesquisarPosicao.Name = "lbl_PesquisarPosicao";
+            lbl_PesquisarPosicao.Size = new Size(125, 15);
+            lbl_PesquisarPosicao.TabIndex = 44;
+            lbl_PesquisarPosicao.Text = "Pesquisar por Posição:";
+            // 
             // frmTelaAtualizar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbl_PesquisarPosicao);
+            Controls.Add(lbl_PesquisarNome);
+            Controls.Add(txt_PesquisarPosicao);
+            Controls.Add(txt_PesquisarNome);
             Controls.Add(btn_Consultar);
-            Controls.Add(txt_time);
-            Controls.Add(rb_Posicao);
-            Controls.Add(rb_Nome);
             Controls.Add(dgv_Atualizar);
             Controls.Add(txt_Contra);
             Controls.Add(txt_Gols);
@@ -412,7 +406,6 @@
             Controls.Add(lbl_Pontos);
             Controls.Add(txt_Nome);
             Controls.Add(lbl_Nome);
-            Controls.Add(pictureBox1);
             Controls.Add(btn_Apagar);
             Controls.Add(btn_Atualizar);
             Controls.Add(btn_Inserir);
@@ -424,8 +417,8 @@
             Name = "frmTelaAtualizar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmTelaAtualizar";
+            Load += frmTelaAtualizar_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgv_Atualizar).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -440,7 +433,6 @@
         private Button btn_Inserir;
         private Button btn_Atualizar;
         private Button btn_Apagar;
-        private PictureBox pictureBox1;
         private Label lbl_Nome;
         private TextBox txt_Nome;
         private Label lbl_Pontos;
@@ -462,9 +454,10 @@
         private TextBox txt_Gols;
         private TextBox txt_Contra;
         private DataGridView dgv_Atualizar;
-        private RadioButton rb_Nome;
-        private RadioButton rb_Posicao;
-        private TextBox txt_time;
         private Button btn_Consultar;
+        private TextBox txt_PesquisarNome;
+        private TextBox txt_PesquisarPosicao;
+        private Label lbl_PesquisarNome;
+        private Label lbl_PesquisarPosicao;
     }
 }

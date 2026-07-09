@@ -37,7 +37,7 @@ namespace CampeonatoBrasileiro2026
                 return;
             }
 
-            
+
             int id = Convert.ToInt32(dgv_Atualizar.CurrentRow.Cells[0].Value);
 
             string rota = "";
@@ -439,6 +439,181 @@ namespace CampeonatoBrasileiro2026
                     MessageBox.Show(ex.Message);
                 }
 
+            }
+        }
+
+        private void frmTelaAtualizar_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void txt_PesquisarNome_TextChanged(object sender, EventArgs e)
+        {
+            string nome = txt_PesquisarNome.Text.Trim();
+
+            if (string.IsNullOrEmpty(nome))
+            {
+                switch (cb_SerieAtualizar.Text)
+                {
+                    case "Série A":
+                        await SerieA();
+                        break;
+                    case "Série B":
+                        await SerieB();
+                        break;
+                    case "Série C":
+                        await SerieC();
+                        break;
+                    case "Série D":
+                        await SerieD();
+                        break;
+                }
+                return;
+            }
+
+            string apiUrl = "";
+
+            switch (cb_SerieAtualizar.Text)
+            {
+                case "Série A":
+                    apiUrl = ApiRotasController.PesquisarSerie_A + nome;
+                    break;
+
+                case "Série B":
+                    apiUrl = ApiRotasController.PesquisarSerie_B + nome;
+                    break;
+
+                case "Série C":
+                    apiUrl = ApiRotasController.PesquisarSerie_C + nome;
+                    break;
+
+                case "Série D":
+                    apiUrl = ApiRotasController.PesquisarSerie_D + nome;
+                    break;
+
+                default:
+                    return;
+            }
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var json = await response.Content.ReadAsStringAsync();
+
+                        switch (cb_SerieAtualizar.Text)
+                        {
+                            case "Série A":
+                                dgv_Atualizar.DataSource = JsonConvert.DeserializeObject<List<ConsultarSerieAModel>>(json);
+                                break;
+
+                            case "Série B":
+                                dgv_Atualizar.DataSource = JsonConvert.DeserializeObject<List<ConsultarSerieBModel>>(json);
+                                break;
+
+                            case "Série C":
+                                dgv_Atualizar.DataSource = JsonConvert.DeserializeObject<List<ConsultarSerieCModel>>(json);
+                                break;
+
+                            case "Série D":
+                                dgv_Atualizar.DataSource = JsonConvert.DeserializeObject<List<ConsultarSerieDModel>>(json);
+                                break;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        private async void txt_PesquisarPosicao_TextChanged(object sender, EventArgs e)
+        {
+            string posicao = txt_PesquisarPosicao.Text.Trim();
+
+            if (string.IsNullOrEmpty(posicao))
+            {
+                switch (cb_SerieAtualizar.Text)
+                {
+                    case "Série A":
+                        await SerieA();
+                        break;
+                    case "Série B":
+                        await SerieB();
+                        break;
+                    case "Série C":
+                        await SerieC();
+                        break;
+                    case "Série D":
+                        await SerieD();
+                        break;
+                }
+                return;
+            }
+
+            string apiUrl = "";
+
+            switch (cb_SerieAtualizar.Text)
+            {
+                case "Série A":
+                    apiUrl = ApiRotasController.PesquisarPosicao_A + posicao;
+                    break;
+
+                case "Série B":
+                    apiUrl = ApiRotasController.PesquisarPosicao_B + posicao;
+                    break;
+
+                case "Série C":
+                    apiUrl = ApiRotasController.PesquisarPosicao_C + posicao;
+                    break;
+
+                case "Série D":
+                    apiUrl = ApiRotasController.PesquisarPosicao_D + posicao;
+                    break;
+
+                default:
+                    return;
+            }
+
+            using (HttpClient client = new HttpClient())
+            {
+                try
+                {
+                    HttpResponseMessage response = await client.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var json = await response.Content.ReadAsStringAsync();
+
+                        switch (cb_SerieAtualizar.Text)
+                        {
+                            case "Série A":
+                                dgv_Atualizar.DataSource = JsonConvert.DeserializeObject<List<ConsultarSerieAModel>>(json);
+                                break;
+
+                            case "Série B":
+                                dgv_Atualizar.DataSource = JsonConvert.DeserializeObject<List<ConsultarSerieBModel>>(json);
+                                break;
+
+                            case "Série C":
+                                dgv_Atualizar.DataSource = JsonConvert.DeserializeObject<List<ConsultarSerieCModel>>(json);
+                                break;
+
+                            case "Série D":
+                                dgv_Atualizar.DataSource = JsonConvert.DeserializeObject<List<ConsultarSerieDModel>>(json);
+                                break;
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
     }
